@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TODO - LIST</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <section class="todo-list">
+    <div class="todo-list-wraper">
+
+      <div class="alert" id="warning" style="display:none;">
+        <h2>Por favor, insira uma tarefa</h2>
+      </div> <!-- ALERT -->
+
+      <div class="form">
+        <div class="label-float">
+          <input type="text" name="list" id="inputList" placeholder="Adicionar tarefa" />
+          <label>Adicionar tarefa</label>
+        </div>
+        <!-- LABEL FLOAT-->
+
+        <button id="addNewElement" onclick='addNewList()'>
+          <img width="32" height="32" style="margin-top: 2px" src="img/plus_91060.png" alt="AddTask" />
+        </button>
+      </div>
+
+      <div id="listar"></div> <!-- LISTA-->
+    </div> <!-- TODO-LIST-WRAPER -->
+  </section> <!-- TODO LIST-->
+
+  <script src="js/App.js"></script>
+</body>
+
+</html>
